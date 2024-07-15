@@ -1,0 +1,19 @@
+<div class="p-10">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Payment File</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+                    <pdf-viewer [src]="pdfFileUrl"
+                      [render-text]="true"
+                      [original-size]="false"
+                      [zoom] ="1"
+                      [zoom-scale]="'page-width'"
+                      [show-all]="true"
+                      [autoresize]="true"
+                      class="pdf-viewer"
+                      style="width: 400px; height: 500px"
+          ></pdf-viewer>
+        </mat-card-content>
+    </mat-card>
+</div>
